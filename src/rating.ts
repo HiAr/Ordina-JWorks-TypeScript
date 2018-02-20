@@ -1,0 +1,4 @@
+interface Rating {
+    name : string;
+
+}
