@@ -16,4 +16,14 @@ class Library {
         this.items = (<Item[]>this.books).concat(this.movies);
         return this.items;
     }
+
+     addMovie() : void {
+        let movie : Movie = this.movies[Math.floor(Math.random() * this.movies.length)];
+        movie.render(document.getElementById("items"));
+    }
+     addBook() : void {
+        let book : Book = this.books[Math.floor(Math.random() * this.books.length)];
+        book.render(document.getElementById("items"));
+    }
+
 }
